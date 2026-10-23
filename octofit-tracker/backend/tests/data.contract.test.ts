@@ -92,7 +92,7 @@ describe('OctoFit data contract', () => {
         await mongoose.disconnect();
         return result;
       };
-      await seed();
+      await seed(); 
       const first = await counts();
       expect(first.users).toBeGreaterThanOrEqual(3);
       expect(first.teams).toBeGreaterThanOrEqual(4);
